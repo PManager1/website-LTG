@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Inverstor Web</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./scripts/my_functions.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100392286-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Review 2</a></li>
+                    <li><a href="#">Price</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- First Container -->
+    <div class="container-fluid bg-1 text-center">
+        <h3 class="margin">Welcome, investors</h3>
+        <h3>90 day trial period (no credit card required) cancel anytime, no strings attached</h3>
+        <br/>
+   <input id="chk-click" type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled">
+    </div>
+
+    <div id="pricing" class="container-fluid">
+        <div class="text-center">
+        </div>
+        <div id="monthly" style="display: none;" class="row slideanim slide m-t">
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Basic</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>10GB</strong> Storage</p>
+                        <p><strong>10</strong> Emails</p>
+                        <p><strong>10</strong> Domains</p>
+                        <p><strong>1GB</strong> Bandwidth</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$19</h3>
+                        <h4>per month</h4>
+                        <button class="btn btn-lg">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Pro</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>25GB</strong> Storage</p>
+                        <p><strong>25</strong> Emails</p>
+                        <p><strong>25</strong> Domains</p>
+                        <p><strong>2GB</strong> Bandwidth</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$29</h3>
+                        <h4>per month</h4>
+                        <button class="btn btn-lg">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Premium</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>50GB</strong> Storage</p>
+                        <p><strong>50</strong> Emails</p>
+                        <p><strong>50</strong> Domains</p>
+                        <p><strong>5GB</strong> Bandwidth</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$49</h3>
+                        <h4>per month</h4>
+                        <button class="btn btn-lg">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="yearly" class="row slideanim slide m-t">
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Basic</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>10GB</strong> Storage</p>
+                        <p><strong>10</strong> Emails</p>
+                        <p><strong>10</strong> Domains</p>
+                        <p><strong>1GB</strong> Bandwidth</p>
+                        <!-- <p><strong>Endless</strong> Bandwidth</p> -->
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$100</h3>
+                        <h4>per year</h4>
+                        <button class="btn btn-lg">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Pro</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>25GB</strong> Storage</p>
+                        <p><strong>25</strong> Emails</p>
+                        <p><strong>25</strong> Domains</p>
+                        <p><strong>2GB</strong> Bandwidth</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$200</h3>
+                        <h4>per year</h4>
+                        <button class="btn btn-lg">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Premium</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>50GB</strong> Storage</p>
+                        <p><strong>50</strong> Emails</p>
+                        <p><strong>50</strong> Domains</p>
+                        <p><strong>5GB</strong> Bandwidth</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$300</h3>
+                        <h4>per year</h4>
+                        <button class="btn btn-lg">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Container -->
+    <div class="container-fluid bg-3 text-center">
+        <h3 class="margin">What Am I?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+
+    <div class="container-fluid bg-2 text-center">
+        <h1 id="message">Subscribe</h1>
+        <p id="successfully">Enter Your Email to Subscribe</p>
+        <form id="subscribe_form" class="form-inline">
+            <div class="form-group">
+                <input type="email" id="subscribe_id" class="form-control" size="25" placeholder="Enter Your Email Address" required>
+            </div>
+            <div class="form-group">
+                <button type="button" id="btn-submit" class="btn btn-danger">Try now</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <!-- <footer class="container-fluid bg-4 text-center footer">
+        <p>footer of page will come here <a href="#">footer</a></p>
+    </footer> -->
+    <footer class="footer--main">
+    <div class="page-width page-width--fluid">
+
+        <div class="footer-top">
+
+
+            <div class="container">
+                <div class="footer-nav">
+                    <a href="/about">About</a>
+                    <a href="/careers">Careers</a>
+                    <a href="/press">Press and Media</a>
+                    <a href="/sitemap">Sitemap</a>
+                </div>
+                <div class="row">
+                <div class="col-sm-2 grid-item grid-item--footer hide--mobile">
+                    <h3 class="footer-heading heading--5 hide--mobile">Online store</h3>
+                    <a class="footer-link " href="/online">Sell online</a>
+                    <a class="footer-link " href="/online/ecommerce-solutions">Features</a>
+                    <a class="footer-link " href="/examples">Examples</a>
+                    <a class="footer-link " href="/website">Website editor</a>
+                    <a class="footer-link " href="/tour">Online retail</a>
+                    <a class="footer-link " href="/tour/ecommerce-website">Ecommerce website</a>
+                    <a class="footer-link " href="/domains">Domain Names</a>
+                </div>
+
+                <div class="col-sm-2 grid-item grid-item--footer hide--mobile footer-column--nameless">
+                    <a class="footer-link " href="/tour/website-design">Themes</a>
+                    <a class="footer-link " href="/tour/shopping-cart">Shopping cart</a>
+                    <a class="footer-link " href="/tour/ecommerce-hosting">Ecommerce hosting</a>
+                    <a class="footer-link " href="/mobile">Mobile commerce</a>
+                    <a class="footer-link " href="/">Ecommerce software</a>
+                    <a class="footer-link " href="/online-store">Online store builder</a>
+                </div>
+
+                <div class="col-sm-2 grid-item grid-item--footer hide--mobile">
+                    <h3 class="footer-heading heading--5">Point of sale</h3>
+                    <a class="footer-link " href="/pos">Point of sale</a>
+                    <a class="footer-link " href="/pos/features">Features</a>
+                    <a class="footer-link " href="/pos/hardware">Hardware</a>
+                    <a class="footer-link " href="/pos/software">POS software</a>
+                </div>
+
+                <div class="col-sm-2 grid-item grid-item--footer grid--mobile">
+                    <h3 class="footer-heading heading--5">Support</h3>
+                    <a class="footer-link " href="//support.shopify.com">24/7 Support</a>
+                    <a class="footer-link " href="//help.shopify.com">Shopify Help Center</a>
+                    <a class="footer-link " href="https://ecommerce.shopify.com/forums">Forums</a>
+                    <a class="footer-link " href="//help.shopify.com/api">API Documentation</a>
+                    <a class="footer-link " href="/tools">Free tools</a>
+                </div>
+
+                <div class="col-sm-2 grid-item grid-item--footer grid--last grid--mobile">
+                    <h3 class="footer-heading heading--5">Shopify</h3>
+                    <a class="footer-link " href="/contact">Contact</a>
+                    <a class="footer-link " href="/partners">Partner program</a>
+                    <a class="footer-link " href="/affiliates">Affiliate program</a>
+                    <a class="footer-link " href="//developers.shopify.com">App developers</a>
+                    <a class="footer-link " href="http://investors.shopify.com">Investors</a>
+                </div>
+            </div>
+            </div>
+
+
+        </div>
+
+        <div class="footer-bottom" style="margin: 0px 49px;">
+            <div class="footer-bottom-item footer-bottom__social">
+                <a class="footer-social__icon " target="_blank">
+                    <i class="fa fa-facebook-square " aria-hidden="true"></i>
+                </a>
+                <a class="footer-social__icon " target="_blank">
+                    <i class="fa fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a class="footer-social__icon " target="_blank">
+                    <i class="fa fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+                <a class="footer-social__icon " target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a class="footer-social__icon " target="_blank">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+                <a class="footer-social__icon " target="_blank">
+                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                </a>
+                <a class="footer-social__icon " target="_blank">
+                    <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+                </a>
+                 <a class="footer-social__icon " target="_blank">
+                    <i class="fa fa-snapchat" aria-hidden="true"></i>
+                </a>
+            </div>
+
+           <div class="footer-bottom-item footer-bottom__links">
+
+            <a rel="nofollow" href="/legal/terms">Terms of Service</a>
+            <a rel="nofollow" href="/legal/privacy">Privacy Policy</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Referrals</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="/scripts/my_functions.js"></script> 
+    <script src="/scripts/signup_list.js"></script>
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .margin {
+            margin-bottom: 45px;
+        }
+
+        .bg-1 {
+            background-color: #1abc9c;
+            /* Green */
+            color: #ffffff;
+        }
+
+        .bg-2 {
+            background-color: #474e5d;
+            /* Dark Blue */
+            color: #ffffff;
+        }
+
+        .bg-3 {
+            background-color: #ffffff;
+            /* White */
+            color: #555555;
+        }
+
+        .bg-4 {
+            background-color: #2f2f2f;
+            /* Black Gray */
+            color: #fff;
+        }
+
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+
+        .navbar-nav li a:hover {
+            color: #1abc9c !important;
+        }
+
+        .invite-btn {
+            width: 308px;
+            height: 60px;
+            background: #fbfbfb;
+            border: 1px solid #d0d4d9;
+            border-radius: 3px;
+            text-align: center;
+            font-size: 16px;
+            color: #3d464d;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+
+        .footer-head {
+            color: black;
+        }
+
+        .footer-link {
+            color: #6e7c88;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-fixed-top" style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a id="loginUser" class="navbar-brand" href="#">Me</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a id="logout" href="#">LogOut</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid bg-1 text-center">
+        <h3 class="margin">Get More Space</h3>
+        <img src="https://www.w3schools.com/bootstrap/bird150.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+        <h3>By Sharing with your friends</h3>
+         <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+  </table>
+    </div>
+
+    <div class="container-fluid bg-3 text-center">
+        <h2>Get up to 16 GB of free Dropbox space!</h2><br>
+        <p>Invite your friends to join Dropbox, and for each one who installs Dropbox we’ll give you both 500 MB of bonus space. If you need even more space, upgrade your account.</p>
+        <p id="showafteremail" style="color: red;"></p>
+        <form id="referral_form" class="form-inline" style="min-height: 70px;">
+            <div class="form-group">
+                <input type="email" id="friendEmail" class="form-control" style="min-height: 60px;" size="25" placeholder="Enter Email Address" required="">
+                <!-- </div> -->
+                <!-- <div class="form-group"> -->
+                <button type="button" id="btn-submit-promo" class="btn btn-primary" style="min-height: 60px;width: 140px;font-size: 21px;">Send</button>
+            </div>
+        </form>
+        <hr style="margin-left: 25%;margin-right: 25%;">
+        <h1>More ways to invite your friends</h1>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <button type="button" class="btn btn-default invite-btn">
+        <!-- <i class="fa fa-envelope-o" aria-hidden="true"></i> -->
+        <img src="https://cfl.dropboxstatic.com/static/images/growth/exp_invite_contacts_gmail-vflK4Z5-V.png">
+        Invite your Gmail contacts
+      </button>
+            </div>
+            <div class="col-sm-4">
+                <button type="button" class="btn btn-default invite-btn">
+        <i class="fa fa-link" aria-hidden="true"></i> Copy link
+      </button>
+            </div>
+            <div class="col-sm-4">
+                <button type="button" class="btn btn-default invite-btn">
+      <!-- <i class="fa fa-facebook-square" style="color: blue;" aria-hidden="true"></i> -->
+      <img src="https://cfl.dropboxstatic.com/static/images/growth/exp_invite_contacts_facebook-vflGTvsRT.png">  Share on Facebook
+      </button>
+            </div>
+        </div>
+        <br>
+        <p>Once you’ve invited friends, you can view the status of your referrals or visit our Help Center if you have any questions.</p>
+    </div>
+
+    <footer class="footer--main">
+        <div class="page-width page-width--fluid">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-2 grid-item grid-item--footer hide--mobile">
+                            <h3 class="footer-heading footer-head">Dropbox</h3>
+                            <a class="footer-link " href="/online">Desktop app</a>
+                            <a class="footer-link " href="/online/ecommerce-solutions">Mobile apps</a>
+                            <a class="footer-link " href="/examples">Plans</a>
+                            <a class="footer-link " href="/website">Security</a>
+                        </div>
+
+                        <div class="col-sm-2 grid-item grid-item--footer hide--mobile footer-column--nameless">
+                            <h3 class="footer-heading footer-head">Company</h3>
+                            <a class="footer-link " href="/tour/shopping-cart">About us</a>
+                            <a class="footer-link " href="/tour/ecommerce-hosting">Jobs</a>
+                            <a class="footer-link " href="/mobile">Press</a>
+                            <a class="footer-link " href="/">Blog</a>
+                        </div>
+
+                        <div class="col-sm-2 grid-item grid-item--footer hide--mobile">
+                            <h3 class="footer-heading footer-head">Support</h3>
+                            <a class="footer-link " href="/pos">Help Center</a>
+                            <a class="footer-link " href="/pos/features">Contact us</a>
+                            <a class="footer-link " href="/pos/hardware">Cookies</a>
+                            <a class="footer-link " href="/pos/software">Privacy & terms</a>
+                        </div>
+
+                        <div class="col-sm-2 grid-item grid-item--footer grid--mobile">
+                            <h3 class="footer-heading footer-head">Community</h3>
+                            <a class="footer-link " href="//support.shopify.com">Developers</a>
+                            <a class="footer-link " href="//help.shopify.com">Referrals</a>
+                            <a class="footer-link " href="https://ecommerce.shopify.com/forums">Forum</a>
+                        </div>
+
+                        <div class="col-sm-2 grid-item grid-item--footer grid--last grid--mobile">
+                            <h3 class="footer-heading footer-head">Connect</h3>
+                            <a class="footer-link">Twitter</a>
+                            <a class="footer-link">Facebook</a>
+                            <a class="footer-link">Google+</a>
+                            <a class="footer-link">YouTube</a>
+                        </div>
+
+                        <div class="col-sm-2 grid-item grid-item--footer grid--last grid--mobile">
+                            <h3 class="footer-heading footer-head">Products</h3>
+                            <a class="footer-link">Plus</a>
+                            <a class="footer-link">Business</a>
+                            <a class="footer-link">Enterprise</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <br/>
+    <br/>
+</body>
+
+</html>

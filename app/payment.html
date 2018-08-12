@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Inverstor Web</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./javascript/my_functions.js"></script>
+<script src="./javascript/payment.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Review</a></li>
+                    <li><a href="#">Price</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- First Container -->
+    <div class="container-fluid text-center">
+        <h3>Start your 30-day free trial now!</h3>
+        <p>or <b>purchase Dropbox Business now</b></p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6" style="font-size: 12pt; line-height: 2em;">
+                <p>
+                    <h1>Who's using Dropbox ?</h1>
+                    <ul>
+                        <li>this is just for</li>
+                        <li> for declined card, etc</li>
+                        <li>visual feedback</li>
+                        <li>Creates a Stripe credit card</li>
+                    </ul>
+                </p>
+                <p>Over 500 million people and 4 million businesses use Dropbox to work smarter</p>
+
+            </div>
+            <!-- You can make it whatever width you want. I'm making it full width
+             on <= small devices and 4/12 page width on >= medium devices -->
+            <div class="col-xs-12 col-md-6">
+
+
+                <!-- CREDIT CARD FORM STARTS HERE -->
+                <div class="panel panel-default credit-card-box">
+                    <div class="panel-heading display-table" style="width: 100%;">
+                        <div class="row display-tr">
+                            <h3 class="panel-title display-td">2. Choose your plan</h3>
+                            <h5 style="float: right;"><b>You won't be charged now</b></h5>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" id="payment-form" method="POST" action="javascript:void(0);">
+                            <div class="row">
+                                <div class="col-xs-2 col-md-2">
+                                    <span> Number of users </span>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="noOfUser" placeholder="" required />
+                                    </div>
+                                </div>
+                                <div class="col-xs-10 col-md-10 pull-right">
+                                    <span> Billing cycle </span>
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="txt-center">Yearly <span class="save_20">(save 20%)</span></th>
+                                                <th class="txt-center">Monthly</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="optradio" style="top: 8px;">
+                                                            <h6><b>$20 / user / month</b></h6>
+                                                            <h6><b>$1,200 <span class="save_20">charged yearly</span><b></6>
+                                                        </label>
+                                                    </div>
+                                                </td>
+
+                                            <td>
+                                                <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optradio" style="top: 8px;">
+                                                    <h6><b>$25 / user / month<b></h6>
+                                                    <h6><b>$125 <span class="save_20">charged monthly</span><b></h6>
+                                                </label>
+                                                </div>
+                                            </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row">
+                                 <div class="col-xs-12">
+                                    <button class="subscribe btn btn-primary btn-lg btn-block" type="button">
+                                        Continue <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row" style="display:none;">
+                                <div class="col-xs-12">
+                                    <p class="payment-errors"></p>
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
