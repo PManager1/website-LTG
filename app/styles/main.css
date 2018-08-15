@@ -42,11 +42,59 @@
         font-weight: bolder;
     }
 
-    .bg-1 {
-        background-color: #6bb8e6;
-        color: #ffffff;
+    .core-values {
+        margin-top: -10px;
+        font-size: 35px;
+        font-weight: bolder;
     }
 
+.para-headings{
+  color: #0074D9;
+}
+    .below-why-liberty {
+        /* margin-bottom: 2px; */
+        font-size: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+        line-height: 1.5;
+        /* font-weight: bolder; */
+    }
+
+  .below-name{
+      color: #aaa;
+      font-size: 17px;
+      margin-top: -14px;
+      margin-bottom: -28px;
+  }
+
+    .para-below-aboutus{
+        font-size: 20px;
+        margin-left:3px;
+    }
+
+    .bg-1 {
+        height: 500px;
+        /* background-image: url('../../images/emirates.jpg'); */
+        background-image: url('../../images/sheesha.jpg');
+    }
+.photo{
+  height: 200px;
+  background-image: url('../../images/jay-mil.jpg');
+  border-radius: 50%;
+}
+
+.jayphoto{
+     border-radius: 50%;
+     width: 250px;
+     margin-top: 30px; 
+}
+
+.photo-2{
+  height: 200px;
+  background-image: url('../../images/jay-mil2.jpg');
+}
+
+/* background-image: url('../../images/jay-img.jpg'); */
     .bg-2 {
         background-color: #474e5d;
         color: #ffffff;
@@ -596,10 +644,13 @@ a:active {
 }
 
 .no-style-items{
-  /*list-style: none;*/
-  font-size: 16px;
-
+  font-size: 20px;
   text-align: left;
+}
+.vision-p{
+  font-size: 20px;
+  /* text-align: left; */
+  font-family: morbi-rounded;
 }
 
 .morbifont{
@@ -616,9 +667,9 @@ a:active {
   }
 }
 
-.ul-bullets {
+/* .ul-bullets {
   margin-left: -18px;
-}
+} */
 
 @media screen and (max-width: 750px){
 .car-caption{
