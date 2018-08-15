@@ -35,6 +35,9 @@
     }
 
 
+.toplinks{
+  font-size: 15px; 
+}
 
     .margin {
         margin-bottom: 45px;
@@ -86,7 +89,7 @@
 .jayphoto{
      border-radius: 50%;
      width: 250px;
-     margin-top: 30px; 
+     margin-top: 30px;
 }
 
 .photo-2{
