@@ -35,9 +35,9 @@
     }
 
 
-.toplinks{
-  font-size: 15px; 
-}
+  .toplinks{
+    font-size: 15px;
+  }
 
     .margin {
         margin-bottom: 45px;
@@ -96,6 +96,8 @@
   height: 200px;
   background-image: url('../../images/jay-mil2.jpg');
 }
+
+
 
 /* background-image: url('../../images/jay-img.jpg'); */
     .bg-2 {
@@ -343,6 +345,7 @@
     }
 
     @media screen and (max-width: 768px) {
+
         .col-sm-4 {
             text-align: center;
             margin: 25px 0;
@@ -354,6 +357,7 @@
     }
 
     @media screen and (max-width: 480px) {
+
         .logo {
             font-size: 150px;
         }
@@ -382,6 +386,10 @@
     @media screen and (min-width: 61.875em)
 .page-width {
     width: 990px;
+}
+
+.liberty-trust-top-link {
+  font-size: 25px;
 }
 
    @media screen and (min-width: 61.875em)
