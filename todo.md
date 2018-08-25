@@ -1,3 +1,7 @@
+Put more content in aboutus etc  in :
+http://www.symphony-care.co.uk/681-2/
+
+
 
 put content on - About us page.
 > put the info about the chairman person...
